@@ -1,0 +1,54 @@
+<style>
+            h1 {
+      /* Put a 15-pixel margin at the bottom of the heading. */
+      margin-bottom: 15px;
+      /* Change the size of your font to 60 pixels high. */
+      font-size: 60px;
+      /* This will color the heading font white. */
+      color: white;
+      /* Align the text to the center of its enclosing element (e.g. div). */
+      text-align: center;
+      /* Underline the text. */
+      text-decoration: underline;
+      /* The background of the heading element will now be black. */
+      background-color: black;
+    }
+    .littleGreen {
+        background-color: aquamarine;
+    }
+    .bigBlue {
+        color: #faad46
+    }
+    img {
+      /* 
+				Center a block element in the middle of its enclosing tag.
+				When you use the "auto" rule on both left and right margins, 
+				your browser will do the math necessary to center a block element.
+				*/
+      margin-left: auto;
+      margin-right: auto;
+      /* Block display (more on this later) */
+      display: block;
+    }
+    .typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
